@@ -1,0 +1,144 @@
+
+	<!DOCTYPE html>	
+
+	<html lang="en" ng-app="iisApp" ng-cloak>
+		<head>
+			<title>UIC | IIS V1.0</title>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+			<link rel=icon href=favicons/uic-icon.png sizes="any" type="image/png"> 
+			<!-- jQuery Core -->
+<script src="js/jquery.js"></script>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+
+
+			<link rel="stylesheet" type="text/css" href="css/custom-login.css">
+		
+	
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+
+	<!-- Font Awesome CSS-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!-- Materialize CSS -->
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize-stepper.min.css">
+	
+	<!-- Dropzone CSS -->
+	<link rel="stylesheet" type="text/css" href="css/dropzone.css">
+	
+
+	<script src="js/sweetalert2.all.min.js"></script>
+
+	<!-- Materialize JS -->
+	
+	
+	<script src="js/materialize.js"></script>
+	
+	<script src="js/materialize-stepper.min.js"></script>
+
+	<!-- Custom Script -->
+	<script src="js/customJS.js" type="text/javascript"></script>
+
+	<!-- Angular Core -->
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/dirPagination.js"></script>
+
+	
+	<script src="js/app.js"></script>
+
+	<script src="js/login.js"></script>
+
+	<!-- Dropzone JS -->
+	<script src="js/dropzone.js"></script>
+	
+ 
+		</head>
+
+		<body>
+<script src="js/login.js"></script>
+
+
+    <div ng-controller="login">
+        <div class="container" style="margin-top: 120px;">
+            <div class="row">
+                <div class="col m2"></div>
+                    <div class="col s12 m8">
+                        <div class="card grey lighten-4 z-depth-3" style="background: rgba(255,255,255, 0.8) !important;">
+                            <center>  
+                                <img class="logo z-depth-3"  src="images/uic-logo3.png">
+                            </center>
+                            <div class="card-content" style="z-index: 9999999 !important;">
+                                <input type="hidden" id="loginAttempts" value="0">
+                                <input type="hidden" id="loginPenalty" value="">
+                                <input type="hidden" id="currentDateTime" value="12-04-2019 23:47:58">
+                                
+                                <form name="account" ng-submit="Login(account)">
+                                    <div class="row">
+                                        <input type="hidden" name="system_id" value="1">
+                                        
+                                        <center><img src="images/myuicportal.png"></center>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="input-field col s12 m6 center-align">
+                                            <input type="text" placeholder="USERNAME" ng-model="account.username" autofocus required>
+                                        </div>
+                                        <div class="input-field col s12 m6 center-align">
+                                            <input type="password" placeholder="PASSWORD" ng-model="account.password" required>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="row row-small">
+                                        <div class="col s12 l6 offset-l3">
+                                            <center>
+                                                <button type="submit" class="waves-effect waves-light btn btn-submit z-depth-2">LOGIN</button>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-small">
+                                        <div class="col s12 l6 offset-l3 center-align">
+                                            <h6><u><a href="index.cfm?fa=login.html">Forgot Password?</a></u></h6>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+        
+		<script language="JavaScript">
+			
+			function toggle(source) {
+				checkboxes = document.getElementsByName('course');
+				for(var i=0, n=checkboxes.length;i<n;i++) {
+					checkboxes[i].checked = source.checked;
+				}
+			}
+
+			function toggle2(source) {
+			  	checkboxes = document.getElementsByName('class_id');
+			  	for(var i=0, n=checkboxes.length;i<n;i++) {
+			    	checkboxes[i].checked = source.checked;
+			 	}
+			}
+
+			function toggle3(source) {
+			  	checkboxes = document.getElementsByName('student_course_id');
+			  	for(var i=0, n=checkboxes.length;i<n;i++) {
+			    	checkboxes[i].checked = source.checked;
+			  	}
+			}
+
+		</script>
+	</body>
+</html> 
