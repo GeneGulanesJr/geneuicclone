@@ -1,0 +1,283 @@
+@font-face {
+    font-family: TrajanPro-Regular;
+    src: url('../fonts/TrajanPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: CenturyGothic;
+    src: url('../fonts/CenturyGothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Calibri;
+    src: url('../fonts/calibri.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: collegec;
+  src: url('../fonts/collegec.ttf') format('truetype');
+}
+
+html {
+
+  background: url('../../images/BG.JPG') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+/* Commented by Byung 01/26/2018 10:54 AM */
+
+/*body{
+
+  background-image: url('../../images/BG.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}*/
+
+/* End of comment by Byung 01/26/2018 10:54 AM */
+
+.logo{
+
+  width: 200px;
+  height: 200px;
+  margin-top: -105px;
+
+  box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px -10px  rgba(0,0,0,0.8);
+  -webkit-box-shadow: 10px -10px  rgba(0,0,0,0.8);
+  -o-box-shadow: 10px -10px  rgba(0,0,0,0.8);
+  border-radius:100px;
+
+}
+
+/* Commented by Byung 01/26/2018 10:54 AM */
+
+/*.logo:hover{
+  box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+}*/
+
+/*.login input[type="text"]{
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-color: transparent;
+  border-bottom: 1px solid;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 1em;
+  text-align: center;
+  font-family: CenturyGothic;
+}
+.login input[type="text"]:active{
+  border-color: transparent;
+  border: none;
+}
+
+.login input[type="password"]{
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-color: transparent;
+  border-bottom: 1px solid;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 1em;
+  text-align: center;
+  font-family: CenturyGothic;
+}*/
+
+/* End of comment by Byung 01/26/2018 10:54 AM */
+
+.btn-submit{
+  /*padding: 15px 30px; Commented by Byung 02/01/2018 9:00 AM */ 
+  width: 130px;
+  height: 50px !important;
+  /*color: #e1375c;*/
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  background-color: #e65b7a !important;
+  /*border-bottom: 4px solid rgba(225, 55, 92, 0.8); Commented by Byung 02/01/2018 9:00 AM */
+  font-family: CenturyGothic;
+}
+
+.btn-submit:hover{
+  background-color: #e5496b !important;
+}
+
+.form-notice{
+  font-family: Calibri;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px)
+{
+  .school-name{
+    font-family: TrajanPro-Regular;
+    font-size: 12px;
+    font-weight: bold;
+    color: #e65b7a;
+  }
+
+  .system-name{
+    font-family: TrajanPro-Regular;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .form-notice{
+    font-family: Calibri;
+    font-size: 11px;
+  }
+
+  .logo{
+
+    width: 110px;
+    height: 110px;
+    margin-top: -65px;
+
+    box-shadow: 10px -10px  rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px -10px  rgba(0,0,0,0.8);
+    -webkit-box-shadow: 10px -10px  rgba(0,0,0,0.8);
+    -o-box-shadow: 10px -10px  rgba(0,0,0,0.8);
+    border-radius:100px;
+
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px)
+{
+  .school-name{
+    font-family: TrajanPro-Regular;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e65b7a;
+  }
+
+  .system-name{
+    font-family: TrajanPro-Regular;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .form-notice{
+    font-family: Calibri;
+    font-size: 10px;
+  }
+
+  .logo{
+
+    width: 110px;
+    height: 110px;
+    margin-top: -60px;
+
+    box-shadow: 10px -10px  rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px -10px  rgba(0,0,0,0.8);
+    -webkit-box-shadow: 10px -10px  rgba(0,0,0,0.8);
+    -o-box-shadow: 10px -10px  rgba(0,0,0,0.8);
+    border-radius:100px;
+
+  }
+}
+
+@media screen and (min-width: 900px)
+{
+  .school-name{
+    font-family: TrajanPro-Regular;
+    font-size: 22px;
+    font-weight: bold;
+    color: #e65b7a;
+  }
+
+  .system-name{
+    font-family: TrajanPro-Regular;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .form-notice{
+    font-family: Calibri;
+    font-size: 14px;
+  }
+}
+
+.container-login{
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  margin-top: 150px;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+input{
+  text-align: center;
+  font-weight: bold;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #e91e63 !important;
+  text-align: center !important;
+  font-size: 1em !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #e91e63 !important;
+ box-shadow: 0 1px 0 0 #e91e63 !important;
+ text-align: center !important;
+ font-size: 1em !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:hover {
+ border-bottom: 1px solid #e91e63 !important;
+ box-shadow: 0 1px 0 0 #e91e63 !important;
+ text-align: center !important;
+ font-size: 1em !important;
+}
+
+/* label focus color */
+.input-field input[type=password]:focus + label {
+  color: #e91e63 !important;
+  text-align: center !important;
+  font-size: 1em !important;
+}
+
+.input-field input[type=password]:focus {
+ border-bottom: 1px solid #e91e63 !important;
+ box-shadow: 0 1px 0 0 #e91e63 !important;
+ text-align: center !important;
+ font-size: 1em !important;
+}
+
+.input-field input[type=password]:hover {
+ border-bottom: 1px solid #e91e63 !important;
+ box-shadow: 0 1px 0 0 #e91e63 !important;
+ text-align: center !important;
+ font-size: 1em !important;
+}
+
+::-webkit-input-placeholder {
+  color: #616161 !important;
+  text-align: center !important;
+}
+
+::-webkit-input-value {
+  color: #616161 !important;
+  text-align: center !important;
+}
+
+.justify-align {
+  text-align: justify !important;
+}
